@@ -18,48 +18,17 @@ html
 	padding: 0;
 }
 
-nav
+a
 {
-	margin: 0 auto;
-	border: 0;
-	display: flex;
-	padding: 1vw 0;
-	position: fixed;
-	background-color: #2b3856;
-	width: 100%;
-	justify-content: space-between;
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-}
-
-div.navleft, div.navright
-{
+	text-decoration: none;
 	color: white;
-	padding: 0 10px;
-	font-size: 18pt;
-	font-weight: bold;
+	transition: text-shadow 0.5s;
 }
-
-div.container
-{
-	display: flex;
-	padding: 0 20px;
-}
-
-div.header
-{
-	padding: 2vw 0;
-	font-size: 1.7rem;
-	font-weight: bold;
-	text-align: center;
-}
-
-div.body
-{
-	margin: 0 auto;
-	border: 0;
-	padding: 20px;
-	background-color: #2b3856;
-	color: white;
-	height: 800px;
-	font-size: 18pt;
-}
+	a:hover
+	{
+		text-shadow: 0 3px 3px rgba(0, 0, 0, 1);
+		transition-property: text-shadow;
+		transition-duration: 0.5s;
+		transition-timing-function: ease;
+		transition-delay: 0s;
+	}
