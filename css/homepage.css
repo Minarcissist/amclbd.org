@@ -1,58 +1,290 @@
-nav
-{
-	margin: 0 auto;
-	border: 0;
-	display: flex;
-	padding: 1vw 0;
-	position: fixed;
-	background-color: #2b3856;
-	width: 100%;
-	justify-content: space-between;
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+nav {
+  margin: 0 auto;
+  border: 0;
+  padding: 1.2vw 0;
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: #2b3856;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
-div.navleft, div.navright
-{
-	color: white;
-	padding: 0 10px;
-	font-size: 18pt;
-	font-weight: bold;
+div.navleft,
+div.navright {
+  color: white;
+  padding: 0 30px;
+  font-size: 18pt;
+  font-weight: bold;
 }
 
-div.container
-{
-	display: flex;
-	padding: 0 20px;
+div.container {
+  display: flex;
+  padding: 0 30px;
 }
 
-div.header
-{
-	padding: 2vw 0;
-	font-size: 1.7rem;
-	font-weight: bold;
-	text-align: center;
+
+
+/* hero section */
+
+.Hero {
+  background-image: url("/img/heroimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
 }
 
-div.body
-{
-	margin: 0 auto;
-	border: 0;
-	padding: 20px;
-	background-color: #2b3856;
-	color: white;
-	height: 800px;
-	font-size: 18pt;
+.HeroDescription {
+  text-align: center;
+  padding-top: 25rem;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  line-height: 50px;
 }
 
-div.pic
-{
-	margin: 0 auto;
+
+/* STANDARDAERO */
+.StandardAero{
+    text-align: center;
+    margin: 10rem 0;
+    padding-right: 50px;
+
 }
-img
-{
-	width: 100%;
-	height: 24rem;
-	margin: 0 auto;
-	object-fit: cover;
-	object-position: 100% 10%;
+.StandardAeroTitle{
+  font-size: 3rem;
+  font-weight: 900;
+}
+.StandardAeroDescription{
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.StandardAeroCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 4rem;
+  margin: 5rem 0;
+
+}
+
+.StandardAeroIssue{
+  width: 500px;
+}
+.StandardAeroCard div h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+  
+.StandardAeroCard div img{
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+.StandardAeroCard div p{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+
+/* AboutUs Section */
+
+.AboutUs{
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 50px;
+
+}
+.AboutUsTitle{
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.AboutUsDescription{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 3rem;
+  margin-top: 10px;
+  font-size: 25px;
+  
+}
+
+.AboutUsCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 4rem;
+  margin: 5rem 0;
+
+}
+
+.AboutUsIssue{
+  width: 500px;
+}
+.AboutUsCard div h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+  
+.AboutUsCard div img{
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+.AboutUsCard div p{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+
+
+
+
+
+/* footer */
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  color: #333;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-about,
+.footer-contact {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-about h2,
+.footer-contact h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-about p,
+.footer-contact p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-contact a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav {
+    margin: 0 auto;
+    border: 0;
+    background-color: #2b3856;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+}
+
+/* Mobile */
+
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav {
+    margin: 0 auto;
+    border: 0;
+    background-color: #2b3856;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 20px;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  div.navleft,
+  div.navright {
+    color: white;
+    padding: 6px;
+    font-size: 10pt;
+    font-weight: bold;
+  }
+  .Hero{
+    height: 600px;
+  }
+  .HeroDescription{
+    padding-top: 15rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-about,
+  .footer-contact {
+    margin: 20px 0;
+  }
+  .AboutUs{
+  padding-right:0px;
+}
+.AboutUsCard{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 0rem;
+  margin: 1rem 0;
+
+}
+
+.AboutUsCard div img{
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.StandardAeroCard{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 0rem;
+  margin: 1rem 0;
+
+}
+
+.StandardAeroCard div img{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  text-align: center;
+}
 }
