@@ -29,7 +29,7 @@ div.container {
 /* hero section */
 
 .Hero {
-  background-image: url("/img/heroimg.jpg");
+  background-image: url("img/heroimg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
